@@ -1399,6 +1399,7 @@ footer li::before {
   }
   .dpsu-scroll i {
     font-size: 1.6rem;
+    display: none;
   }
   .fa-arrow-up {
     color: #ABB5FF;
@@ -1973,7 +1974,12 @@ footer li::before {
     font-size: 0.875rem;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
+  .dpsu-scroll {
+    display: none;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
   .hamburger-menu {
     display: block;
   }
@@ -2569,8 +2575,10 @@ footer li::before {
     color: #DA0000;
     gap: 0.5rem;
     position: relative;
-    bottom: 0px;
+    bottom: 269px;
+    right: 20px;
     margin-top: 0.5rem;
+    white-space: nowrap;
   }
   .view-all p {
     opacity: 1;
