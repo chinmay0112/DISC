@@ -1975,11 +1975,9 @@ footer li::before {
   }
 }
 @media only screen and (min-width: 770px) and (max-width: 1024px) {
-  .dpsu-scroll {
-    display: none;
+  body {
+    overflow-x: hidden;
   }
-}
-@media only screen and (min-width: 770px) and (max-width: 1024px) {
   .hamburger-menu {
     display: block;
   }
@@ -2059,6 +2057,9 @@ footer li::before {
     gap: 1rem;
     width: 100%;
   }
+  .explore-by-zone hr {
+    width: 600px;
+  }
   .explore {
     display: flex;
     width: 100%;
@@ -2130,7 +2131,7 @@ footer li::before {
     margin-left: 0rem;
     padding: 0rem;
     position: relative;
-    left: 40px;
+    left: 50px;
     justify-content: center;
     align-items: center;
     font-family: Poppins, sans-serif;
@@ -2445,7 +2446,9 @@ footer li::before {
     opacity: 0.46;
   }
   .card-latest-updates {
-    padding: 3rem;
+    padding: 1rem;
+    position: relative;
+    right: 25px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     height: auto;
@@ -2634,5 +2637,84 @@ footer li::before {
   }
   .core-1:hover {
     transform: scale(1.05);
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    align-items: center;
+    color: #fff;
+    background-color: #031B4E;
+    height: 25.5rem;
+  }
+  .my-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .my-footer img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .my-footer .v2 {
+    border: 0.5px solid #C1C1C1;
+    opacity: 1;
+    height: 9.125rem;
+  }
+  .useful-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .useful-links h5 {
+    font-size: 1.063rem;
+    font-weight: 700;
+  }
+  .useful-links ul {
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  footer li {
+    position: relative;
+    margin-bottom: 5px;
+  }
+  footer li::before {
+    content: "";
+    border-color: transparent #fff;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin-right: 0.5em; /* Adjust the spacing between the bullet and text */
+    position: relative;
+  }
+  .other {
+    margin-left: 4rem;
+    font-weight: 300;
+  }
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  .social-icons i {
+    background: #00A9E7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #fff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .other a {
+    color: #fff;
+    font-size: 0.875rem;
   }
 }/*# sourceMappingURL=styles.css.map */
