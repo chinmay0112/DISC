@@ -128,7 +128,8 @@ select {
 .hero-section {
   display: flex;
   background-image: url(../images/Mask\ Group.png);
-  height: 700px;
+  min-height: 700px;
+  height: auto;
   background-position: center right;
   background-repeat: no-repeat;
   margin-right: 7.5rem;
@@ -154,7 +155,6 @@ select {
   opacity: 1;
   padding: 1.5rem;
   width: 420px;
-  height: 470px;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   z-index: 100;
@@ -211,7 +211,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 6rem;
   gap: 4rem;
 }
 
@@ -244,7 +244,6 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   width: 500px;
   height: 450px;
 }
@@ -304,6 +303,96 @@ select {
   font-weight: 700;
 }
 
+.explore-by-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent linear-gradient(180deg, #384EB2 0%, #0B09E1 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.88;
+  margin-top: 2rem;
+  padding: 3rem;
+  color: #fff;
+}
+
+.explore-content {
+  width: 50%;
+}
+
+.explore h2 {
+  font-weight: 700;
+}
+
+.v2 {
+  border: 1px solid #FFF;
+  width: 0px;
+  height: 69px;
+  opacity: 1;
+}
+
+.v2-p {
+  display: flex;
+  gap: 1rem;
+}
+
+.v2-p p {
+  font-weight: 300;
+}
+
+.explore {
+  width: 80%;
+}
+
+.explore-data {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.explore-data-image {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.overall-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overall-data hr {
+  width: 100%;
+  color: #fff;
+  opacity: 100%;
+  margin: 0;
+}
+
+.explore-data .v2 {
+  height: 150px;
+}
+
+.explore-data h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.explore-data p {
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.data {
+  padding: 1rem;
+}
+
+.explore-data-image img {
+  height: 450px;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .Aero-content {
     width: 100%;
@@ -317,7 +406,6 @@ select {
   .hero-section {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
     margin-right: 0;
   }
   .Aero-India {
@@ -338,10 +426,17 @@ select {
   }
   .numbers-that-matter {
     flex-direction: column;
-    margin-top: 33rem;
   }
   .number-matter {
     width: 80%;
+  }
+  .explore-data-image {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .explore-content {
+    width: 100%;
   }
 }
 @media (max-width: 430px) {
@@ -386,7 +481,6 @@ select {
   }
   .numbers-that-matter {
     flex-direction: column;
-    margin-top: 5rem;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -417,6 +511,32 @@ select {
   .card4 {
     top: 18px;
     left: 240px;
+  }
+  .explore-data-image {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .explore-content {
+    width: 100%;
+  }
+  .explore-data-image img {
+    height: 300px;
+  }
+  .overall-data hr {
+    width: 90%;
+  }
+  .explore-data {
+    gap: 0rem;
+  }
+  .explore-data p {
+    font-size: 0.875rem;
+  }
+  .explore-data .v2 {
+    height: 100px;
+  }
+  .data h3 {
+    font-size: 20px;
   }
 }
 @media (min-width: 431px) and (max-width: 768px) {
@@ -461,9 +581,16 @@ select {
   }
   .numbers-that-matter {
     flex-direction: column;
-    margin-top: 24rem;
   }
   .number-matter {
     width: 80%;
+  }
+  .explore-data-image {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .explore-content {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

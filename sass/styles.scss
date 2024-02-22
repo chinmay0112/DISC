@@ -153,8 +153,8 @@ color: #FFFFFF;
 .hero-section{
     display: flex;
     background-image: url(../images/Mask\ Group.png);
-  
-   height: 700px;
+  min-height: 700px;
+   height: auto;
  background-position: center right;
  background-repeat: no-repeat;
  margin-right: 7.5rem;
@@ -184,7 +184,7 @@ color: #FFFFFF;
     opacity: 1;
     padding: 1.5rem;
  width: 420px;
- height: 470px;
+
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     z-index: 100;
@@ -239,12 +239,15 @@ padding: 0.7rem;
 border-radius: 50px;
 margin-top: 1rem;
 }
+
+// Hero section ends
+// number that matter starts
    
 .numbers-that-matter{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 6rem;
     
     gap: 4rem;
 }
@@ -272,7 +275,7 @@ opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+   
     width: 500px;
     height: 450px;
 }
@@ -331,7 +334,96 @@ height: 164px;
 .my-card h3{
     font-weight: 700;
 }
-// Hero-section ends-------------------------------------
+// number that matter ends------------------------
+
+// explore by zone starts
+
+.explore-by-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent linear-gradient(180deg, #384EB2 0%, #0B09E1 100%) 0% 0% no-repeat padding-box;
+opacity: 0.88;
+margin-top: 2rem;
+padding: 3rem;
+color: #fff;
+}
+.explore-content{
+    width: 50%;
+}
+.explore h2{
+    font-weight: 700;
+}
+.v2{
+    border: 1px solid #FFF;
+    width: 0px;
+height: 69px;
+opacity: 1;
+   }
+.v2-p{
+    display: flex;
+        
+    gap: 1rem;
+}
+.v2-p p{
+    font-weight: 300;
+
+}
+.explore{
+    width: 80%;
+    // border: 1px solid white;
+}
+
+.explore-data{
+    display: flex;
+    gap: 2rem;
+ position: relative;
+}
+
+.explore-data-image{
+    display: flex;
+    width: 100%;
+  
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+.overall-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overall-data hr{
+    width: 100%;
+   color: #fff;
+   opacity: 100%;
+   margin: 0;
+}
+
+.explore-data .v2{
+height: 150px;
+}
+.explore-data h3{
+    font-size: 35px;
+    font-weight: 700;
+}
+.explore-data p{
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.data{
+    padding: 1rem;
+}
+
+.explore-data-image img{
+    height: 450px;
+}
+// explore by zone ends
+
+
 
 @media(min-width:769px) and (max-width: 1024px) {
     .Aero-content{
@@ -353,8 +445,9 @@ height: 164px;
       
 display: flex;
 flex-direction: column;
-  gap: 6rem;
+
  margin-right: 0;
+ 
     
    }
    .Aero-India{
@@ -386,12 +479,23 @@ flex-direction: column;
 //    numbers that matter@1024px
 .numbers-that-matter{
     flex-direction: column;
-    margin-top: 33rem;
+   
 }
 .number-matter{
     width: 80%;
 }
 //  numbers that matter@1024px
+
+// explore by zone starts@1024px
+.explore-data-image{
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.explore-content{
+    width: 100%;
+}
+// explore by zone ends@1024px
 }
 
 
@@ -458,7 +562,7 @@ flex-wrap: wrap;
 
     .numbers-that-matter{
         flex-direction: column;
-        margin-top: 5rem;
+       
         justify-content: center;
         align-items: center;
         padding: 1rem
@@ -495,7 +599,45 @@ top: 250px;
         top: 18px;
         left: 240px;
     }
+    // explore by zone starts@430px
+
+    .explore-by-zone{
+        
+    }
+.explore-data-image{
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    
 }
+.explore-content{
+    width: 100%;
+}
+
+.explore-data-image img{
+    height: 300px;
+
+}
+.overall-data hr{
+    width: 90%;
+}
+.explore-data{
+    gap: 0rem;
+}
+.explore-data p{
+    font-size: 0.875rem;
+}
+.explore-data .v2{
+height: 100px;
+}
+.data h3{
+    font-size: 20px;
+}
+// explore by zone ends@430px
+}
+
+
+// ipad view
 @media(min-width:431px) and (max-width:768px){
 
  
@@ -558,7 +700,7 @@ flex-wrap: wrap;
 
 .numbers-that-matter{
     flex-direction: column;
-    margin-top: 24rem;
+  
 }
 .number-matter{
     width: 80%;
@@ -566,4 +708,17 @@ flex-wrap: wrap;
 
 
 //  numbers that matter @768px
+
+// explore by zone starts@768px
+.explore-data-image{
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+.explore-content{
+    width: 100%;
+}
+// explore by zone ends@768px
 }
