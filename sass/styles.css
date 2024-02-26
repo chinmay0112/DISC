@@ -33,7 +33,7 @@ body.dark-mode {
   font-size: 1rem;
 }
 
-.Lastupdated, .skip-main-content p {
+.lastupdated, .skip-main-content p {
   margin-bottom: 0;
 }
 
@@ -139,7 +139,7 @@ select {
   margin-right: 7.5rem;
 }
 
-.Aero-India {
+.aero-India {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +149,7 @@ select {
   display: none;
 }
 
-.Aero-content {
+.aero-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -164,7 +164,7 @@ select {
   z-index: 100;
 }
 
-.Aero-Heading {
+.aero-Heading {
   font-family: Poppins, sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -202,7 +202,7 @@ select {
   font-family: "Google Sans", sans-serif;
 }
 
-.Aero-India button {
+.aero-India button {
   background-color: #010066;
   border: none;
   color: white;
@@ -992,7 +992,7 @@ footer li::before {
   background: #00A9E7 0% 0% no-repeat padding-box;
   opacity: 1;
   color: #fff;
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1069,7 +1069,7 @@ footer li::before {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .Aero-content {
+  .aero-content {
     width: 100%;
   }
   .hero-section img {
@@ -1083,11 +1083,11 @@ footer li::before {
     flex-direction: column;
     margin-right: 0;
   }
-  .Aero-India {
+  .aero-India {
     display: flex;
     width: 100%;
   }
-  .Aero-content {
+  .aero-content {
     position: relative;
     top: 0;
     right: 0;
@@ -1254,7 +1254,7 @@ footer li::before {
     background-size: contain;
     margin: 0;
   }
-  .Aero-content {
+  .aero-content {
     position: relative;
     top: 0;
     right: 0;
@@ -1506,7 +1506,7 @@ footer li::before {
     background-size: contain;
     margin: 0;
   }
-  .Aero-content {
+  .aero-content {
     position: relative;
     top: 0;
     right: 0;
